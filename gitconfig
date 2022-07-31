@@ -11,7 +11,8 @@
 
 [core]
   pager = less -FRSX
-	editor = subl -n -w  >/dev/null 2>&1
+	editor = code --wait
+  sshCommand = “ssh -i ~/.ssh/id_ed25519_trash”
 
 [alias]
   co = checkout
@@ -48,4 +49,7 @@
   mergeoptions = --no-edit
 [user]
 	email = contactme@t-online.de
-	name = TrashRepos
+	name = github-trash
+
+[github]
+user = “TrashRepos”
