@@ -4,7 +4,7 @@ ZSH=$HOME/.oh-my-zsh
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="agnoster"
 # Useful oh-my-zsh plugins for Le Wagon bootcamps
-plugins=(git ssh-agent gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search zsh-aliases-exa)
+plugins=(git ssh-agent gitfast last-working-dir common-aliases sublime history-substring-search)
 
 # (macOS-only) Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
@@ -50,7 +50,7 @@ export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bi
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
-source /home/human/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /home/human/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
@@ -70,6 +70,6 @@ fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
-alias l="exa --all --tree --level=2 --icons"
+alias l="exa --all --tree --level=1 --icons"
 alias x="exit"
 alias c="clear"
