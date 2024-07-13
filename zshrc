@@ -2,8 +2,15 @@ ZSH=$HOME/.oh-my-zsh
 
 # You can change the theme with another one from https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
+
+###### This line has been added and line 5 has been commented out for powerline styling ###
+powerline-daemon -q
+. /usr/share/powerline/bindings/zsh/powerline.zsh
+
+
 # Useful oh-my-zsh plugins for Le Wagon bootcamps
+
 plugins=(git ssh-agent gitfast last-working-dir common-aliases sublime history-substring-search)
 
 # (macOS-only) Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md
