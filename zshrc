@@ -1,14 +1,18 @@
 ZSH=$HOME/.oh-my-zsh
-
+                                   
+#  /\  /\_   _ _ __ ___   __ _ _ __  
+# / /_/ | | | | '_ ` _ \ / _` | '_ \ 
+#/ __  /| |_| | | | | | | (_| | | | |
+#\/ /_/  \__,_|_| |_| |_|\__,_|_| |_|
+                               
 # You can change the theme with another one from https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 #ZSH_THEME="robbyrussell"
-#ZSH_THEME="agnoster"
-
+ZSH_THEME="agnoster"
+DEFAULT_USER=whoami
 ###### This line has been added and line 5 has been commented out for powerline styling ###
-powerline-daemon -q
-. /usr/share/powerline/bindings/zsh/powerline.zsh
-
-
+#powerline-daemon -q
+#. /usr/share/powerline/bindings/zsh/powerline.zsh
+#### uncomment above two lines if u want another powerline !
 # Useful oh-my-zsh plugins for Le Wagon bootcamps
 
 plugins=(git ssh-agent gitfast last-working-dir common-aliases sublime history-substring-search)
@@ -77,6 +81,7 @@ fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
-alias l="exa --all --tree --level=1 --icons"
+alias l="exa --all --tree --level=1 --icons" # ---------------------------------------------------- human edition
 alias x="exit"
 alias c="clear"
+alias v="nvim" # -----
